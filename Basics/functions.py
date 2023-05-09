@@ -14,3 +14,7 @@ def add(a):
     return(b)
 
 add(1) # calling the function
+
+def product(c):
+    d = c*5
+    return(d)
