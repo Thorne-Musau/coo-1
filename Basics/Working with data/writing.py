@@ -13,4 +13,8 @@ with open(example2, "w") as writefile:
     for line in Lines:
         print(line)
         writefile.write(line)
-        
+
+# Appending files 
+
+with open (example2, "a") as append:
+    append.write("This is line D\n")
