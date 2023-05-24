@@ -34,7 +34,7 @@ df.info() # concise summary of your df
 
 
 #saving Datasets
-#df.to_csv("automobile.csv", index= False)
+df.to_csv("automobile.csv", index= False)
 
 #pd.set_option("display.max_colwidth", None)
 #print(df)
