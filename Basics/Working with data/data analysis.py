@@ -26,6 +26,11 @@ df.head=20
 #Data types in df
 print(df.dtypes)
 
+#describing
+df.describe(include= "all") #Includes all datatypes
+#info
+df.info() # concise summary of your df
+
 
 
 #saving Datasets
