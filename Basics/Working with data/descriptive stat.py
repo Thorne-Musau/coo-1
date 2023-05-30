@@ -32,3 +32,6 @@ plt.xlabel("Engine size")
 plt.ylabel("Price")
 
 plt.show()
+
+df.to_csv("/home/thorne/Desktop/new.csv", index= False, header=True)
+print(df)
