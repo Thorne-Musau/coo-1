@@ -16,6 +16,19 @@ df = pd.read_csv(filename, names =headers)
 # value_counts() -Summarize categorical data.
 
 drive_wheel_counts=df["drive-wheels"].value_counts()
-print(drive_wheel_counts)
+#print(drive_wheel_counts)
 
 # Box plot- Shows median, upper and lower quartile and the inter-quartile range
+# Makes it easy to compare between groups
+# sns.boxplot( x='drive-wheels', y= "price", data=df)
+
+#Scatter plot- Relationship between two var( Target-y and Predictor-x)
+y=df["engine-size"]
+x=df["price"]
+plt.scatter(x,y)
+
+plt.title("Scatter plot of Engine size and Price")
+plt.xlabel("Engine size")
+plt.ylabel("Price")
+
+plt.show()
